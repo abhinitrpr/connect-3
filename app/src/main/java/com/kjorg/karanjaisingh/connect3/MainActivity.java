@@ -71,7 +71,9 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     boolean gameIsOver = true;
-
+                    if((gameState[6] == gameState[7] && gameState[7]== gameState[8]) ||(gameState[2] == gameState[5] && gameState[5]== gameState[8]) ||(gameState[0] == gameState[4] && gameState[4]== gameState[8])){
+                            gamIsOver = false;
+                        }
                     for(int counterState: gameState) {
 
                         if(counterState == 2) {
